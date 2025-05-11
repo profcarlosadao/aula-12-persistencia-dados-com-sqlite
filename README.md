@@ -1,16 +1,24 @@
-# daily_tasks
+# 🗂️ daily_tasks
 
-A new Flutter project.
+Aplicativo Flutter com persistência local utilizando SQLite, desenvolvido como parte da **Aula 12 – Persistência de Dados com SQLite**.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🚀 Funcionalidades
 
-A few resources to get you started if this is your first Flutter project:
+- ✅ Listar tarefas armazenadas localmente
+- ➕ Adicionar tarefas com título e data
+- 🗑️ Remover tarefas
+- 🧠 Separação clara em camadas: Model, ViewModel e Service
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🧱 Estrutura do Projeto
+
+```bash
+lib/
+├── main.dart
+├── task.dart                      # Modelo de dados (Task)
+├── task.view_model.dart           # ViewModel com lógica de estado
+├── task_database.service.dart     # Serviço de persistência usando sqflite
+└── task.screen.dart               # UI principal da aplicação
